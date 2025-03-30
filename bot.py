@@ -3,8 +3,8 @@ from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-TOKEN = "ВАШ_ТОКЕН_БОТА"
-CHAT_ID = "ВАШ_CHAT_ID"
+TOKEN = "7813470044:AAEdy6ET_T67pojyIr3yjoIkMWxrgfoy37w"
+CHAT_ID = "1493172689"
 
 # Функція для читання повідомлень
 def get_random_message():
