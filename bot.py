@@ -48,3 +48,15 @@ if __name__ == "__main__":
     scheduler.start()
     
     application.run_polling()
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def health_check():
+    return "Bot is alive!"
+
+if __name__ == '__main__':
+    import threading
+    threading.Thread(target=app.run, kwargs={'host':'0.0.0.0','port':10000}).start()
+    # Ваш існуючий код запуску бота
+    application.run_polling()
